@@ -23,6 +23,18 @@ sizes.addEventListener('change',(e)=>{
     });
 
    
+downloadBtn.addEventListener('click',()=>{
+    let img=document.querySelector('.qr-body img');
+    if(img !==null)
+    {
+        let imgAtrr = img.getAttribute('src');
+        downloadBtn.setAttribute("href",imgAtrr);
+    }
+    else{
+        downloadBtn.setAttribute("href",`${document.querySelector('canvas').toDataURL()}`);
+    }
+ }
+ );
    
     function isEmptyInput(){
         if(qrText.value.length > 0)

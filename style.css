@@ -64,3 +64,19 @@ border-radius: 8px;
     border-radius: 8px;
 
 }
+.qr-body{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+   
+
+    
+}
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 0.5px solid #fff ;
+    border-radius: 8px;
+}
